@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-/* TESTTESTTESTTESTTESTESTESTESTEST */
+
 :root {
     --primary-color: rgb(2, 44, 20);
     --secondary-color: rgb(209, 208, 208);
@@ -68,10 +68,10 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
-    
+    /*Hero Styling  */
 
 .hero {
-background-image: url("./assets/images/abstract-3592117_960_720.jpg");
+background-image: url("./assets/images/banner-1763479_960_720.jpg");
 background-size: auto;
 background-position: center;
 display: flex;
@@ -97,13 +97,16 @@ height: 20vh;
 }
 
 .subtitle:hover {
-    background-image:url(./assets/images/profile\ selfie.jpg) ;
+    background-image:url("./assets/images/profile\ selfie.jpg") ;
     background-position: center;
     background-size: 10%;
     background-repeat: no-repeat;
-    margin-top: 50px;
+   
+    
 }
 
+/* End Hero Styling */
+/* Content styling */
 .wrapper {
     max-width: 95%;
     margin-left: auto;
@@ -120,9 +123,6 @@ height: 20vh;
 }
 
 
-
-
-/* .work {} */
 
 .section-portion h2 {
     flex: 0 0 15%;
@@ -156,7 +156,7 @@ height: 20vh;
 
 
 
-.run-buddy {
+.projects {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -164,104 +164,92 @@ height: 20vh;
     background-attachment: fixed;
     background-size: cover;
     margin: auto;
+    border-radius: 20px;
 
 }
 
-.run-buddy h3 {
-    margin-left: 45%;
+.container .projects:hover {
+   padding: 50px;
+   transition: transform .2s;
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
 }
 
-.run-buddy h3 a {
+.projects h3:hover {
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+}
+
+.projects h3 {
+    position: relative;
+    text-align:center;
+}
+
+.projects h3 a {
     text-decoration: underline;
     color: var(--primary-color);
     background-color: rgb(152, 153, 153);
     font-size: 25px;
+    border-radius: 10px;
+    
 }
 
-.project-two {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+#project-two { 
+    background-image:url(./assets/images/HoriSEOn-img.jpg.png) ;
+
+}
+
+
+
+#project-three {
     background-image: url(./assets/images/construction.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    margin: auto;
 
 }
 
-.project-two h3 {
-    margin-left: 45%;
-}
 
-.project-three {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+#project-four {
     background-image: url(./assets/images/construction.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    margin: auto;
-
 }
 
-.project-three h3 {
-    margin-left: 45%;
-}
 
-.project-four {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+#project-five {
     background-image: url(./assets/images/construction.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    margin: auto;
 }
 
-.project-four h3 {
-    margin-left: 45%;
-}
-.project-five {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-image: url(./assets/images/construction.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    margin: auto;
-}
-.project-five h3 {
-    margin-left: 45%;
-}
-
-
+/* End content styling */
 
 /* Footer Style start */
 
- /* footer {  
-    padding: 20px 35px;
+.foot-section {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-size: cover;
-}*/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: stretch;
-    margin: 10px;
-    padding: 10px;
-    
-    
-
+    justify-content: space-evenly;
+    padding: 15px;
 }
 
-footer nav ul {
-    align-items: center;
+.foot-section h2 {
+    flex: 0 0 15%;
+    color: var(--primary-color) ;
+    font-size: 50px;
+    padding-right: 15px;
+    text-align: right;
+    border-right: 4px solid;
+}
+
+.foot-section div {
+    flex: 0 0 80%;
+}
+.footer {
     margin: 7px 0;
+}
+
+ .footer ul { 
+    align-items: center;
+    margin: auto ;
     max-width: 100%; 
     list-style-type: none;
     display: flex;
@@ -270,25 +258,18 @@ footer nav ul {
     justify-content:space-evenly;
     align-items: center;
 }
-    
-footer nav ul li {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
 
-footer nav ul li a {
-   
+.footer ul li a {
+    font-size: 20px;
     font-style: italic;
-    font-weight: lighter;
-    font-size: 1.80vw;
+    font-weight: bold;
     color: var(--primary-color);
-    text-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
-   
-   
 }
+    
 
+
+
+/* Footer style end */
 
 /* media query */
 
@@ -315,7 +296,7 @@ footer nav ul li a {
       font-size: 20px;
     }
   
-    footer h2, footer nav {
+    .footer h2, .footer nav {
       text-align: center;
       width: 100%;
     }

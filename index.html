@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<!-- TESTESTESTESTESTESTESTESTESTEST -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     <header>
         <h1>
 
-            <a name="top"></a>
+            <a name="nav-link"></a>
             <a href="#top">Kevin Myers</a>
 
         </h1>
@@ -51,7 +51,7 @@
 
     <div class="wrapper">
         <article class="section-portion">
-            <h2>About Me</h2>
+            <h2 id="About">About Me</h2>
 
 
 
@@ -91,29 +91,31 @@
 
         <article class="section-portion">
 
-            <h2>
+            <h2 id="Work">
                 Work
             </h2>
 
             <div class="container">
-                <div class="run-buddy">
+                <div class="projects">
                     <h3>
 
                         <a href="https://kevinpmyers.github.io/run-buddy/" target="_blank">Run Buddy</a>
                     </h3>
 
                 </div>
-                <div class="project-two">
-                    <h3>Project project-two</h3>
+                <div id="project-two" class="projects">
+                    <h3>
+                        <a href="https://kevinpmyers.github.io/HoriSEOn/" target="_blank">HoriSEOn Refactor</a>
+                    </h3>
                 </div>
-                <div class="project-three">
+                <div id="project-three" class="projects">
                     <h3>Project Three</h3>
                 </div>
-                <div class="project-four">
+                <div id="project-four" class="projects">
                     <h3>Project Four</h3>
                 </div>
 
-                <div class="project-five">
+                <div id="project-five" class="projects">
                     <h3>Project five</h3>
                 </div>
 
@@ -127,12 +129,14 @@
     <!-- need border to line up with work section -->
     <!-- too many containers in footer? -->
 
+<article>
+    <section id="Contact" class="foot-section">
+        <h2>
+            Contact
+        </h2>
 
-    <article class="section-portion">
-        <h2>Contact</h2>
-
-        <footer id="contact">
-            <nav>
+        <div class="footer">
+            
 
                 <ul>
                     <li class="foot-nav">
@@ -144,15 +148,15 @@
                     <li class="foot-nav">
                         <a href="https://github.com/KevinPMyers">Github</a>
                     </li>
-                    <li class="foot-nav">
+                    <li id="Resume">
                         <a href="./assets/images/Resume.png">Resume</a>
                     </li>
                 </ul>
-            </nav>
-        </footer>
-    </article>
+            
+        </div>
+    </section>
 
-
+</article>
 </body>
 
 </html>
