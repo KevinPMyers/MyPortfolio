@@ -4,8 +4,8 @@
 To create a professional portfolio highlighting my skills.
 
 ## Built With
-*HTML
-*CSS
+* HTML
+* CSS
 
 ## Website
 https://kevinpmyers.github.io/MyPortfolio/
