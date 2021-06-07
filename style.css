@@ -6,7 +6,7 @@
 :root {
     --primary-color: rgb(2, 44, 20);
     --secondary-color: rgb(209, 208, 208);
-    --tertiary-color: rgb(3, 2, 70);
+    --tertiary-color: rgb(79, 84, 88);
 }
 
 /* body style */
@@ -37,15 +37,26 @@ header h1 {
     color: var(--primary-color) ;
 }
 
+header h1 img {
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 5px;
+    width: 75px;
+    
+}
+
 header h1 a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-    
+header h1 a:hover {
+    background: var(--secondary-color);
+    border-radius: 15px;
+}    
 
 header nav ul {
-    padding-top: 15px;
+    padding-top: 85px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -96,14 +107,6 @@ height: 20vh;
       
 }
 
-.subtitle:hover {
-    background-image:url("./assets/images/profile\ selfie.jpg") ;
-    background-position: center;
-    background-size: 10%;
-    background-repeat: no-repeat;
-   
-    
-}
 
 /* End Hero Styling */
 /* Content styling */
@@ -154,7 +157,7 @@ height: 20vh;
 }
 
 
-
+/* Work Styling */
 
 .projects {
     display: flex;
@@ -165,7 +168,7 @@ height: 20vh;
     background-size: cover;
     margin: auto;
     border-radius: 20px;
-
+    transition: all .3s ease-in-out;
 }
 
 .container .projects:hover {
@@ -174,16 +177,21 @@ height: 20vh;
    width: 200px;
    height: 200px;
    margin: 0 auto;
+   transform: scale(1.1);
 }
 
 .projects h3:hover {
     border-radius: 15px;
     background-color: var(--secondary-color);
+    transform: scale(1.1);
+    
 }
 
 .projects h3 {
+    padding: 10px 10px;
     position: relative;
     text-align:center;
+    transition: all .2s ease-in-out;
 }
 
 .projects h3 a {
@@ -235,7 +243,7 @@ height: 20vh;
     flex: 0 0 15%;
     color: var(--primary-color) ;
     font-size: 50px;
-    padding-right: 15px;
+    padding-right: 18px;
     text-align: right;
     border-right: 4px solid;
 }
@@ -264,6 +272,11 @@ height: 20vh;
     font-style: italic;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.footer ul li a:hover {
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
 }
     
 
