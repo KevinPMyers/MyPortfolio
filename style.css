@@ -110,6 +110,9 @@ height: 20vh;
 
 /* End Hero Styling */
 /* Content styling */
+#intro-text {
+    font-size: 20px;
+}
 .wrapper {
     max-width: 95%;
     margin-left: auto;
@@ -211,7 +214,7 @@ height: 20vh;
 
 
 #project-three {
-    background-image: url(./assets/images/construction.jpg);
+    background-image: url(./assets/images/2021-07-11.png);
 
 }
 
